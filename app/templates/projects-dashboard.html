@@ -1,0 +1,185 @@
+{% extends "layouts/base.html" %}
+
+{% block title %}AI Projects{% endblock title %}
+
+{% block content %}
+
+<main>
+    <div class="section-header bg-primary text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <!--<h1 class="fw-bolder display-2">
+                        Hi there
+                    </h1>-->
+                    <h2 class="lead fw-normal text-muted mb-4 px-lg-10">
+                        Checkout my projects with their source code shared
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--End of Title section-->
+    <div class="section section-md">
+        <div class="container">
+            <div class="row justify-content-center">
+                <p class="lead fw-normal text-muted">Machine Learning</p>
+                <hr />
+            </div>
+            <div class="row mb-5">
+                <div class="col-12 col-md-6 col-lg-4 mb-5 mb-lg-0">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h3 class="h5 card-title mt-3"><a href="/image-captioning.html">ML Framework</a></h3>
+                            <p class="card-text">A machine learning framework to try several ML models and pick up the best model based on given metric. 
+                            </p>
+                            <p class="card-text"><span class="fas fa-check me-2"></span>Support for both - classification and regression.</p>
+                            <p class="card-text"><span class="fas fa-check me-2"></span>Highly configurable modular code with separate pipeline for each phase of ML lifecycle.</p>
+                            <p class="card-text"><span class="fas fa-check me-2"></span>Support for Docker, ML Flow, AWS CI CD pipeline.</p>
+                            <!-- <a href="/image-captioning.html" class="btn btn-primary btn-sm">Learn More</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-5 mb-lg-0">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h3 class="h5 card-title mt-3"><a href="/image-captioning.html">Auto Claims Fraud Detector</a></h3>
+                            <p class="card-text">AdaBoost Classifier to detect if the claim could be a fraud or not.
+                            </p>
+                            <p class="card-text"><span class="fas fa-check me-2"></span>Balancing using SMOTE as highly imbalanced dataset.</p>
+                            <p class="card-text"><span class="fas fa-check me-2"></span>0.75 roc_auc_score (as originally imabalanced dataset)</p>
+                            <p class="card-text"><span class="fas fa-check me-2"></span>ML Flow implementation for better model management and tracking of experiments and hyperparameters.</p>
+                            <!-- <a href="/image-captioning.html" class="btn btn-primary btn-sm">Learn More</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-5 mb-lg-0">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h3 class="h5 card-title mt-3"><a href="/image-captioning.html">Telecom Churn Predictor</a></h3>
+                            <p class="card-text">Logistic Regression Classifier to predict if telecom customer would churn.
+                            </p>
+                            <p class="card-text"><span class="fas fa-check me-2"></span>Extensive data cleaning.</p>
+                            <p class="card-text"><span class="fas fa-check me-2"></span>Accuracy score 0.85</p>
+                            <p class="card-text"><span class="fas fa-check me-2"></span>Chose simpler model based on results as lower bias on less complex model.</p>
+                            <!-- <a href="/image-captioning.html" class="btn btn-primary btn-sm">Learn More</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <br />
+            </div>
+        </div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <p class="lead fw-normal text-muted">Large Language Models</p>
+                <hr />
+            </div>
+            <div class="row mb-5">
+                <div class="col-12 col-md-6 col-lg-4 mb-5 mb-lg-0">
+                    <div class="card shadow">
+                        <!--<a href="/image-captioning.html">
+                                <img src="/static/assets/img/project/image-captioning.png"
+                                    class="card-img-top rounded-top" /></a>-->
+                        <div class="card-body">
+                            <!-- <h3 class="h5 card-title mt-3"><a href="/image-captioning.html">Image to Speech</a></h3> -->
+                            <h3 class="h5 card-title mt-3">Image to Speech</h3>
+                            <p class="card-text">A transformer model to generate audio caption for any image.
+                            </p>
+                            <p class="card-text"><span class="fas fa-check me-2"></span>Encoder, Attention mask, Decoder
+                                created from scratch.</p>
+                                <p class="card-text"><span class="fas fa-check me-2"></span>Transfer learning on inception v3 to get image features to feed into encoder.</p>
+                            <p class="card-text"><span class="fas fa-check me-2"></span>Generated caption converted to
+                                audio gTTS (google Text-To-Speech) library.</p>
+                            <!-- <a href="/image-captioning.html" class="btn btn-primary btn-sm">Learn More</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-5 mb-lg-0">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h3 class="h5 card-title mt-3">Document Summarizer</h3>
+                            <p class="card-text">Re-trained SOTA summarization and NER models (from huggingface) to summarize auto insurance documents.
+                            </p>
+                            <p class="card-text"><span class="fas fa-check me-2"></span>Transfer learning on pre-trained pegasus cnn model for summarization.</p>
+                                <p class="card-text"><span class="fas fa-check me-2"></span>Re-trained tokenizer as well based on auto insurance document data.</p>
+                            <p class="card-text"><span class="fas fa-check me-2"></span>Re-trained BERT based model to identity user defined named entities.</p>
+                            <!-- <a href="/image-captioning.html" class="btn btn-primary btn-sm">Learn More</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-5 mb-lg-0">
+                    <div class="card shadow">
+                        <!--<a href="/image-captioning.html"><img src="/static/assets/img/project/rasa-chatbot.png"
+                                class="card-img-top rounded-top"></a>-->
+                        <div class="card-body">
+                            <h3 class="h5 card-title mt-3"><a href="/image-captioning.html">Restaurant Search Chatbot</a></h3>
+                            <p class="card-text">A chatbot to search a variety of restaurants in India.</p>
+                            <p class="card-text"><span class="fas fa-check me-2"></span>Built chatbot using RASA open-source framework.</p>
+                            <p class="card-text"><span class="fas fa-check me-2"></span>Deployed the chatbot in Slack and WhatsApp</p>
+                            <p class="card-text"><span class="fas fa-check me-2"></span>Downside is RASA requires a lot of manual data creation using stories containing intents and actions.</p>
+                            <!-- <a href="/image-captioning.html" class="btn btn-primary btn-sm">Learn More</a> -->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div>
+                <br />
+            </div>
+        </div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <p class="lead fw-normal text-muted">Computer Vision</p>
+                <hr />
+            </div>
+            <div class="row mb-5">
+                <div class="col-12 col-md-6 col-lg-4 mb-5 mb-lg-0">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h3 class="h5 card-title mt-3">Car Damage Estimator</h3>
+                            <p class="card-text">Transfer learning on Efficient net v2 to assess car damage by analyzing image and estimate repair cost.</p>
+                            <p class="card-text"><span class="fas fa-check me-2"></span>Techniques like Learning Rate changes and early stopping on callbacks.</p>
+                            <p class="card-text"><span class="fas fa-check me-2"></span>A setup of 3 different models to - detect car, detect damage area and damage severity.</p>
+                            <p class="card-text"><span class="fas fa-check me-2"></span>Average repair cost lookup using google collected data.</p>
+                            <!-- <a href="/auto-damage.html" class="btn btn-primary btn-sm">Learn More</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-5 mb-lg-0">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h3 class="h5 card-title mt-3">Skin Cancer Detector</h3>
+                            <p class="card-text">A scratch built CNN model to detect the skin patch as cancerous or not.</p>
+                            <p class="card-text"><span class="fas fa-check me-2"></span>Use of data augmentation techniques to enhance data.</p>
+                            <p class="card-text"><span class="fas fa-check me-2"></span>CNN model with 86% accuracy on test data (unseen).</p>
+                            <p class="card-text"><span class="fas fa-check me-2"></span>Returning results with percent confidence as results are sensitive in nature.</p>
+                            <!-- <a href="/auto-damage.html" class="btn btn-primary btn-sm">Learn More</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-5 mb-lg-0">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h3 class="h5 card-title mt-3">Hand Gesture Recognition</h3>
+                            <p class="card-text">A 3D CNN model to detect hand gesture to be used by devices like TV/phone.</p>
+                            <p class="card-text"><span class="fas fa-check me-2"></span>Use of Keras 3D convolution layers.</p>
+                            <p class="card-text"><span class="fas fa-check me-2"></span>Model with 78% accuracy.</p>
+                            <p class="card-text"><span class="fas fa-check me-2"></span>Built Image Data Generator to handle images with different dimensions.</p>
+                            <!-- <a href="/auto-damage.html" class="btn btn-primary btn-sm">Learn More</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+{% include 'includes/footer.html' %}
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}
