@@ -15981,8 +15981,8 @@ textarea.form-control-lg {
 
 .section-header {
   position: relative;
-  padding-top: 1rem;
-  padding-bottom: 1rem; }
+  padding-top: 5rem;
+  padding-bottom: 2rem; }
 
 @media (min-width: 576px) {
   .section {
@@ -15994,8 +15994,8 @@ textarea.form-control-lg {
     padding-top:5rem;
     padding-bottom: 2rem; }
     .section-header.section-sm {
-      padding-top: 3rem;
-      padding-bottom: 1rem; }
+      padding-top: 5rem;
+      padding-bottom: 2rem; }
   .section-xl {
     padding-top: 10rem;
     padding-bottom: 10rem; }
